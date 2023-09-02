@@ -38,7 +38,9 @@ NSString * DEFAULT_LICENSE_SERVER_URL = @"https://fps.ezdrm.com/api/licenses/";
     
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc] initWithURL:ksmURL];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/octet-stream" forHTTPHeaderField:@"Content-type"];
+    [request setValue:@"de236319-cabd-4102-b240-98d92ec0db3a" forHTTPHeaderField:@"SWANKPORTAL"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
+
     [request setHTTPBody:requestBytes];
     
     @try {
